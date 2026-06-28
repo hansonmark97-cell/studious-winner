@@ -70,18 +70,18 @@ class HomeScreen extends StatelessWidget {
             // Example of a list item
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text('1. PREMIUM SUBSCRIPTIONS'),
-                Text('ACTIVE'),
+              children: [
+                const Text('1. PREMIUM SUBSCRIPTIONS'),
+                const Text('ACTIVE'),
               ],
             ),
             const SizedBox(height: 12),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text('2. IN-APP ADVERTISEMENTS'),
-                Text('READY'),
+              children: [
+                const Text('2. IN-APP ADVERTISEMENTS'),
+                const Text('READY'),
               ],
             ),
             const SizedBox(height: 32),
@@ -94,6 +94,7 @@ class HomeScreen extends StatelessWidget {
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                 ),
+                // TODO: integrate cashout/payment flow
                 onPressed: () {},
                 child: const Text('CASHOUT FUNDS'),
               ),
